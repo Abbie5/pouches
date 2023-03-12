@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "seedpouch",
+    "version": "${version}",
+    "name": "Pouches",
+    "description": "",
+    "authors": [
+      "Zachary Barbanell"
+    ],
+    "license": "GPLv3",
+    "icon": "pack.png",
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "com.zacharybarbanell.seedpouch.SeedPouch"
+      ],
+      "client": [
+        "com.zacharybarbanell.seedpouch.SeedPouchClient"
+      ]
+    },
+    "mixins": [
+      "seedpouch_common.mixins.json",
+      "seedpouch_fabric.mixins.json"
+    ],
+    "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": "~1.19",
+      "java": ">=17"
+    }
+  }
+  
